@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lia"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="10sp"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+
+        <ImageView
+            android:id="@+id/icclose"
+            android:layout_width="34dp"
+            android:layout_height="25dp"
+            android:src="@drawable/closeic" />
+
+        <ImageView
+            android:id="@+id/ichome"
+            android:layout_width="34dp"
+            android:layout_height="25dp"
+            android:src="@drawable/sea" />
+
+
+        <ImageView
+            android:layout_width="109dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="90sp"
+            android:src="@drawable/icnews" />
+
+        <ImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="34dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="110sp"
+            android:src="@drawable/ic_prof" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:defaultQueryHint="Search News..."
+            app:iconifiedByDefault="false">
+
+
+        </androidx.appcompat.widget.SearchView>
+    </LinearLayout>
+
+
+</RelativeLayout>

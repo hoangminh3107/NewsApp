@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:background="#FFF7F7"
+        app:cardCornerRadius="5dp"
+        android:orientation="horizontal"
+        android:layout_margin="6dp"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/txt_titel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:maxLines="3"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt_source1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_headline1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/img_del"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_del"
+            android:layout_weight="1"
+
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
